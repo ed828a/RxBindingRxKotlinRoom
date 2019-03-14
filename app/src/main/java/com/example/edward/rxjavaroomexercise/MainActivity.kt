@@ -90,8 +90,6 @@ class MainActivity : AppCompatActivity() {
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe(
                 {list ->
-//                    val list = arrayListOf<User>()
-
                     adapter.showUser(list)
                     adapter.notifyDataSetChanged()
                 },
